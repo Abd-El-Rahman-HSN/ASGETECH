@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Short name:</strong>
+  <%= @book.short_name %>
+</p>
+
+<p>
+  <strong>Full name:</strong>
+  <%= @book.full_name %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @book.year %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <a href="/authors/<%= @book.author.id %>"><%= @book.author.frist %>  <%= @book.author.last %> </a>
+</p>
+
+<%= link_to 'Back', books_path %>
